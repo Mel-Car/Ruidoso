@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Ruidoso</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <header id="main-header">
+        <div class="container">
+
+            <nav>
+                <img src="images/logo.png" alt="Ruidoso Logo" class="logo">
+                <ul class="nav-list">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="history.html">History</a> </li>
+                    <li> <a href="visit.html">Visit</a> </li>
+                    <li> <a href="events.html">Events</a> </li>
+                    <li> <button class="btn btn-secondary">Call</button></li>
+                </ul>
+
+                <!--Hamburger Icon Toggle-->
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!--Hamburger Icon Toggle-->
+
+            </nav>
+
+        </div>
+
+        <div class="home-header">
+
+            <h1 class="intro-heading">
+                Ruidoso is Built on Tourism
+            </h1>
+
+            <h1 class="main-heading">
+                Ruidoso, New Mexico brings you year-round entertainment and relaxation.
+            </h1>
+
+            <p>
+                Ruidoso's beautiful alpine setting is surrounded by over a million acres of wilderness and national forest ideal for hiking, horseback riding and mountain biking.
+            </p>
+
+            <!--Dropdown-->
+            <div class="dropdown">
+                <button class="btn btn-primary"> Discover Ruidoso </button>
+                    <div class="dropdown-content">
+                        <a href="#"> Winter </a>
+                        <a href="#"> Spring </a>
+                        <a href="#"> Summer </a>
+                        <a href="#"> Fall </a>
+                    </div>
+            </div>
+            <!--Dropdown-->
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="services">
+
+            <div class="flex-container">
+
+                <div class="section-title">
+
+                    <h1> Plan Your Stay </h1>
+
+                    <div class="line"> </div>
+
+                </div>
+
+                <section class="service">
+                    <div class="flex-item-left">
+
+                        <img src="images/service1.jpg" alt="Midtown Ruidoso">
+                        <h3> Midtown </h3>
+                        <p> 
+                            <b> A vibrant Midtown is one more reason Ruidoso is a favorite New Mexico vacation destination. </b>
+                                Nestled in Ruidoso&apos;s downtown, Midtown is the village hub for dining, arts, and shopping. Stroll through Midtown and enjoy a great selection of restaurants, boutiques, wineries, brewpubs and cafes. 
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="service">
+                    
+                    <img src="images/service2.jpg" alt="Spender Theatre Ruidoso">
+                    <h3> Spencer Theatre</h3>
+                    <p>
+                        The Spencer Theater for the Performing Arts opened in October of 1997, creating a year-round venue for world-class performances in theater, music and dance. At the heart of the Spencer in its 514-seat hall, you&apos;ll encounter a powerful experience of the performing arts with outstanding acoustics, intimate seating, and artistry of the highest caliber.
+                    </p>
+
+                </section>
+
+                <section class="service">
+
+                    <img src="images/service3.jpg" alt="Historic Sites Ruidoso">
+                    <h3> Historic Sites </h3>
+                    <p>
+                        Step into Ruidoso&apos;s rich past, where Native American heritage, historic forts, and cowboy folklore come to life. Explore museums, cultural landmarks, and legendary sites that tell the story of the region&apos;s deep history and time-honored traditions.
+                    </p>
+                </section>
+
+            </div>
+
+        </div>
+
+        <div id="visit">
+
+            <div class="container">
+                <h1>Need Help Planning?</h1>
+                <p>Our in-house travel agency is ready to offer you an exciting vacation that is designed to fit your needs. Whether you are passing through town or planning  a vacation we can help!</p>
+            </div>
+
+            <div id="form">
+                <form class="form-grid">
+                    
+                    <fieldset>
+
+                        <legend>Visitor Information</legend>
+
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Travel Information</legend>
+                        <p>I would like more information about:</p>
+
+                        <label for="hotels">
+                            <input type="checkbox" name="travel" id="hotels" value="Hotels">
+                            Hotels
+                        </label>
+
+                        <label for="getting-around">
+                            <input type="checkbox" name="travel" id="getting-around" value="Getting-Around">
+                            Getting Around
+                        </label>
+
+                        <label for="restaurants">
+                            <input type="checkbox" name="travel" id="restaurants" value="Restaurants">
+                            Restaurants
+                        </label>
+
+                        <label for="seasonal-activities">
+                            <input type="checkbox" name="travel" id="seasonal-activities" value="Seasonal-Activities">
+                            Seasonal Activities
+                        </label>
+
+                        <label for="tours">
+                            <input type="checkbox" name="travel" id="tours" value="Tours">
+                            Tours
+                        </label>
+
+                    </fieldset>
+
+                    <input type="submit" value="Submit" class="submit">
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-list">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="history.html">History</a> </li>
+                    <li> <a href="visit.html">Visit</a> </li>
+                    <li> <a href="events.html">Events</a> </li>
+            </ul>
+            <img src="images/logo.png" alt="Ruidoso Logo" class="footer-logo">
+            <p><b>Ruidoso, NM</b></p>
+        </div>
+    </footer>
+
+    <script>
+
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener('click', () => {
+        navBtn.classList.toggle('active');
+        navList.classList.toggle('active');
+        });
+
+    </script>
+
+</body>
+</html>

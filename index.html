@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruidoso Tourism Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <header id="main-header">
+        <div class="container">
+
+            <nav>
+                <img src="images/logo.png" alt="Ruidoso Logo" class="logo">
+                <ul class="nav-list">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="history.html">History</a> </li>
+                    <li> <a href="visit.html">Visit</a> </li>
+                    <li> <a href="events.html">Events</a> </li>
+                    <li> <button class="btn btn-secondary">Call</button></li>
+                </ul>
+
+                <!--Hamburger Icon Toggle-->
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!--Hamburger Icon Toggle-->
+
+            </nav>
+
+        </div>
+
+        <div class="home-header">
+
+            <h1 class="intro-heading">
+                Ruidoso is Built on Tourism
+            </h1>
+
+            <h1 class="main-heading">
+                Ruidoso, New Mexico brings you year-round entertainment and relaxation.
+            </h1>
+
+            <p>
+                Ruidoso's beautiful alpine setting is surrounded by over a million acres of wilderness and national forest ideal for hiking, horseback riding and mountain biking.
+            </p>
+
+            <!--Dropdown-->
+            <div class="dropdown">
+                <button class="btn btn-primary"> Discover Ruidoso </button>
+                    <div class="dropdown-content">
+                        <a href="#"> Winter </a>
+                        <a href="#"> Spring </a>
+                        <a href="#"> Summer </a>
+                        <a href="#"> Fall </a>
+                    </div>
+            </div>
+            <!--Dropdown-->
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="review">
+            <div class="container">
+                <h1>
+                    What Locals Say
+                </h1>
+                <p>
+                    <q>
+                        Ruidoso is one of those quaint, little magical towns that make you appreciate life and the outdoors. There are plenty of outdoor activities both in summer and winter. The scenery is beautiful! The trees, mountains, and wildlife cannot be beat!
+                    </q>
+                </p>
+
+            </div>
+
+            <div class="profile">
+                <img src="images/profile.png" alt="Reviewers Profile Picture">
+                <h4>
+                    Lyla Woodsberry
+                </h4>
+            </div>
+
+        </section>
+
+        <section id="about-us">
+
+            <div class="container">
+
+            <div class="about-content">
+                <h4>
+                    About Us
+                </h4>
+
+                <h1>
+                    Ruidoso Has Something for Everyone
+                </h1>
+
+                <p>
+                    Ruidoso is a small mountain village located in Lincoln County in the Sacramento Mountains of South Central New Mexico.   The community of 8,000 people sits at an elevation of 6,970-feet, which makes Ruidoso the most popular tourism destination in the region.
+                    <br>
+                    Ruidoso is surrounded by over a million acres of forest and wilderness. The Lincoln National Forest, the White Mountain Wilderness Area and the Fort Stanton National Conservation Area offer hundreds of miles of multi-use trails and is an ideal destination for hiking, horseback riding, mountain biking and camping.
+                </p>
+
+                <button class="btn btn-primary">
+                    Find Out More
+                </button>
+            
+            </div>
+
+            <div class="about-image">
+                <img src="images/about-background.jpg" alt="View of Ruidoso">
+            </div>
+
+            </div>
+
+        </section>
+
+        <section id="questions">
+
+            <div class="container">
+
+                <h1>
+                    Do you have any questions?
+                </h1>
+
+                <p>
+                    Whether you are a first-time visitor or a long-time local, Ruidoso Tourism welcomes your input and questions.
+                </p>
+
+                <button class="btn btn-primary">
+                    Ask Us
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-list">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="history.html">History</a> </li>
+                    <li> <a href="visit.html">Visit</a> </li>
+                    <li> <a href="events.html">Events</a> </li>
+            </ul>
+            <img src="images/logo.png" alt="Ruidoso Logo" class="footer-logo">
+            <p><b>Ruidoso, NM</b></p>
+        </div>
+    </footer>
+
+    <script>
+
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener('click', () => {
+        navBtn.classList.toggle('active');
+        navList.classList.toggle('active');
+        });
+
+    </script>
+
+</body>
+</html>
